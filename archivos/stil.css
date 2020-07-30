@@ -1,17 +1,37 @@
-h1{
-    font-size: 200% ;
+/*pone toda la pagina a 0 sin margenes ni pading*/
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+/*le damos forma al header  o cabezera*/
+header{
+    font-size: 400% ;
     text-align: center;
     color: red;
     text-shadow: 4px 4px 4px grey;
+   padding: 25px;
+
 }
+
+/* utilizamos el selector de id para menu*/
 #menu{
     margin: auto;
     width: 500px;
 }
-
+ 
+/*le quitamos el estilo a las ul*/
 ul, ol {
     list-style: none;
 }
+
+/* selecciona los elementos dentro de la clase nav que sean linias y tengan un link a>
+y que al momento de pasar por encima cambien de color */
+.nav li a:hover{
+    background-color: gray;
+}
+
+
 .nav li a{
     background-color: black;
     color: white;
@@ -21,4 +41,13 @@ ul, ol {
 }
 .nav>li{
     float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
 }

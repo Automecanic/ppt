@@ -1,5 +1,24 @@
 h1{
-    font-size: 200%;
+    font-size: 200% ;
+    text-align: center;
     color: red;
     text-shadow: 4px 4px 4px grey;
+}
+#menu{
+    margin: auto;
+    width: 500px;
+}
+
+ul, ol {
+    list-style: none;
+}
+.nav li a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nav>li{
+    float: left;
 }

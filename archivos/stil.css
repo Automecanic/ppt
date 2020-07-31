@@ -6,6 +6,7 @@
 
 /*le damos forma al header  o cabezera*/
 header{
+    background-color: green;
     font-size: 400% ;
     text-align: center;
     color: red;

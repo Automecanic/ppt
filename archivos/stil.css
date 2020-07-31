@@ -6,12 +6,13 @@
 
 /*le damos forma al header  o cabezera*/
 header{
-    background-color:green;
+    background-color: #239157;
     font-size: 400% ;
     text-align: center;
     color: red;
     text-shadow: 4px 4px 4px grey;
    padding: 25px;
+
 
 }
 

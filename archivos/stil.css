@@ -18,6 +18,7 @@ header{
     text-shadow: 4px 4px 4px grey;
    padding: 25px;
 border-radius: 20px;
+-webkit-border-radius:20px;
 
 }
 

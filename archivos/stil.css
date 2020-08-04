@@ -2,6 +2,11 @@
 *{
     padding: 0px;
     margin:0px;
+    
+}
+
+body{
+    background-color: rgb(124, 177, 124);
 }
 
 /*le damos forma al header  o cabezera*/
@@ -12,7 +17,7 @@ header{
     color: red;
     text-shadow: 4px 4px 4px grey;
    padding: 25px;
-
+border-radius: 20px;
 
 }
 
@@ -39,7 +44,9 @@ y que al momento de pasar por encima cambien de color */
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: block;
+    display: block; 
+    border-radius: 20px;
+
 }
 .nav>li{
     float: left;

@@ -18,6 +18,7 @@ header{
     text-shadow: 4px 4px 4px grey;
    padding: 25px;
 border-radius: 20px;
+/*en Mac os no funciona el border-rodius*/
 -webkit-border-radius:20px;
 
 }
@@ -60,4 +61,46 @@ y que al momento de pasar por encima cambien de color */
 }
 .nav li:hover > ul{
     display: block;
+}
+/*-------------------- barra lateral */
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    /* esto hace que la barra se esconda a la izquierda */
+    left: -200px;
+    transition: 500ms linear;
+}
+#sidebar.active{
+   left: 0px;;
+}
+#sidebar ul li{
+    color: black;
+    list-style: none;
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid grey;
+}
+
+.logo {
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
 }

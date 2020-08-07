@@ -17,9 +17,9 @@ header{
     color: red;
     text-shadow: 4px 4px 4px grey;
    padding: 25px;
-border-radius: 20px;
+/*border-radius: 20px;*/
 /*en Mac os no funciona el border-rodius*/
--webkit-border-radius:20px;
+/*-webkit-border-radius:20px;*/
 
 }
 
@@ -42,16 +42,18 @@ y que al momento de pasar por encima cambien de color */
 
 
 .nav li a{
+    position: sticky;
     background-color: black;
-    color: white;
+    color: #fcfdfd;
     text-decoration: none;
     padding: 10px 15px;
     display: block; 
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 
 }
 .nav>li{
     float: left;
+    width: 25%;
 }
 
 .nav li ul {
@@ -67,8 +69,8 @@ y que al momento de pasar por encima cambien de color */
     position: fixed;
     width: 200px;
     height: 100%;
-    border-radius: 25px;
-    background: white;
+   /* border-radius: 25px;*/
+    background:white;
     color: black;
     /* esto hace que la barra se esconda a la izquierda */
     left: -200px;
@@ -77,12 +79,20 @@ y que al momento de pasar por encima cambien de color */
 #sidebar.active{
    left: 0px;;
 }
-#sidebar ul li{
+#logotipo{
+    border-radius: 40px;
+}
+#sidebar ul li {
+    
     color: black;
     list-style: none;
     text-align: center;
     padding: 15px 10px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid black;
+}
+#sidebar ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
@@ -90,7 +100,8 @@ y que al momento de pasar por encima cambien de color */
     display: block;
     margin: 0 auto;
 }
-#sidebar .toggle-btn{
+#sidebar .toggle-btn {
+
     position: absolute;
     left: 230px;
     top: 20px;
